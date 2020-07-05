@@ -14,9 +14,9 @@ This batch is exclusively for the students of EEE who had passed out of college.
 
 This course will help students of TELENGANA/AP achieve their dream of cracking a government job by being by their side and clearing their doubts with the help of personalized TELEGRAM groups.
 
-This initiative by “Edu BASICS” at WARANGAL can act as an alternative to any high-cost coaching institutes that are insensitively rising the fees for coaching to unbearable levels.
+This initiative by “Company Name” at City can act as an alternative to any high-cost coaching institutes that are insensitively rising the fees for coaching to unbearable levels.
 
-So Come join us and “Learn Electrical with Edu Basics”. The coaching here at “Edu Basics” has
+So Come join us and “Learn Electrical with Company Name”. The coaching here at “Company Name” has
 
 - Afforadable fee
 - Talented and qualfied faculty (NIT/IIT alumnus)
