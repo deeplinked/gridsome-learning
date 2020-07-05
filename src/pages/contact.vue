@@ -57,7 +57,7 @@
   name="contact"
   method="post"
   v-on:submit.prevent="handleSubmit"
-  action="/success/"
+  action="/Success/"
   data-netlify="true"
   data-netlify-honeypot="bot-field"
 >
@@ -139,7 +139,7 @@ export default {
                 ...this.formData,
             }),
             })
-            .then(() => this.$router.push('/success'))
+            .then(() => this.$router.push('/Success'))
             .catch(error => alert(error))
         }
     }
