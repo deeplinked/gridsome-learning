@@ -53,50 +53,56 @@
 
         <div class="column is-6">
             <div class="box">
-                <form>
-                    <div class="field">
-                    <label class="label">Name</label>
-                    <div class="control">
-                        <input class="input" type="text" placeholder="Text input">
-                    </div>
-                    </div>
+<form
+  name="contact"
+  method="post"
+  v-on:submit.prevent="handleSubmit"
+  action="/success/"
+  data-netlify="true"
+  data-netlify-honeypot="bot-field"
+>
+  <input type="hidden" name="form-name" value="contact" />
+  <p hidden>
+    <label>
+      Don’t fill this out: <input name="bot-field" />
+    </label>
+  </p>
+  
+    <div class="field">
+      <label for="name" class="label" >Your name</label>
+      <div class="control">
+      <input class="input" type="text" name="name" v-model="formData.name" />
+      </div>
+    </div>
 
-                    <div class="field">
-                    <label class="label">Email</label>
-                    <div class="control">
-                        <input class="input" type="email" placeholder="Email input">
-                    </div>
-                    </div>
+    <div class="field">
+      <label for="email" class="label">Your email</label>
+      <div class="control">
+      <input class="input" type="email" name="email" v-model="formData.email" />
+      </div>
+    </div>
 
-                    <div class="field">
-                    <label class="label">Subject</label>
-                    <div class="control">
-                        <div class="select">
-                        <select>
-                            <option>Select dropdown</option>
-                            <option>With options</option>
-                        </select>
-                        </div>
-                    </div>
-                    </div>  
+      <div class="field">
+        <label class="label">Subject</label>
+        <div class="control">
+            <div class="select">
+            <select name="subject" v-model="formData.subject">
+                <option>Admission</option>
+                <option>Faculty</option>
+            </select>
+            </div>
+        </div>
+        </div>
 
-                    <div class="field">
-                    <label class="label">Message</label>
-                    <div class="control">
-                        <textarea class="textarea" placeholder="Textarea"></textarea>
-                    </div>
-                    </div>  
+    <div class="message-wrapper field">
+    <label for="message" class="label">Message</label>
+    <div class="control">
+    <textarea class="textarea" name="message" v-model="formData.message"></textarea>
+    </div>
+    </div>
 
-                    <div class="field is-grouped">
-                    <div class="control">
-                        <button class="button is-link">Submit</button>
-                    </div>
-                    <div class="control">
-                        <button class="button is-link is-light">Cancel</button>
-                    </div>
-                    </div>
-
-                </form>
+  <button class="button is-link" type="submit">Submit form</button>
+</form>
             </div><!-- .box -->
         </div>
 
@@ -108,9 +114,34 @@
 </template>
 
 <script>
+
 export default {
     metaInfo: {
         title: "Contact"
+    },
+    data() {
+        return {
+        formData: {},
+        }
+    }, 
+    methods: {
+        encode(data) {
+            return Object.keys(data)
+            .map(key => encodeURIComponent(key) + '=' + encodeURIComponent(data[key]))
+            .join('&')
+        },
+        handleSubmit(e) {
+            fetch('/', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+            body: this.encode({
+                'form-name': e.target.getAttribute('name'),
+                ...this.formData,
+            }),
+            })
+            .then(() => this.$router.push('/success'))
+            .catch(error => alert(error))
+        }
     }
 }
 </script>
