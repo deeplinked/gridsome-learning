@@ -1,9 +1,11 @@
 <template>
 <div>
     <Navbar />
+    <transition name="fade" appear>
     <div class="content">
       <slot/>
     </div>
+    </transition>
     <Footer />
 </div>
 </template>
@@ -28,5 +30,10 @@ export default {
 </script>
 
 <style>
-
+.fade-enter-active {
+  transition: opacity .5s ease;
+}
+.fade-enter {
+  opacity: 0;
+}
 </style>

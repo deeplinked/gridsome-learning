@@ -1,10 +1,8 @@
 <template>
   <Layout>
-
     <Hero />
   <!--hola-->
     <NewsRoll />
-
   </Layout>
 </template>
 
