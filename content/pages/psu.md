@@ -6,7 +6,7 @@ date: 25 August 2020
 duration: 5 months
 fee: 22,650
 discounted: 18,250
-venue: Warangal/Hanamkonda
+venue: City name
 ---
 ### GENCO/TRANSCO/DISCOMS
 

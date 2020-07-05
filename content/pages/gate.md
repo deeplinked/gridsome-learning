@@ -6,7 +6,7 @@ date: 25 August 2020
 duration: 5 months
 fee: 18,250
 discounted: 15,250
-venue: Warangal/Hanamkonda
+venue: City name
 ---
 
 This batch is for both EEE and ECE students of 3rd and 4th year b-tech. The validity of the course is 2 years (as an inaugural offer, later it will be for 1 year). For any other gate related info like syllabus, important dates (commencing and closing of application),etc visit http://gate.iitd.ac.in/

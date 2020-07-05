@@ -4,8 +4,8 @@
     
     <div class="columns ">
     <div class="column is-offset-3 is-6">
-    <h1 class="title is-1 has-text-link">Edu Basics</h1>
-    <div class="is-divider" data-content="basics made easy"></div>
+    <h1 class="title is-1 has-text-link">Company Name</h1>
+    <div class="is-divider" data-content="company tag line"></div>
     </div>
     </div>
     <p class="subtitle is-4">
@@ -19,7 +19,7 @@
         </vue-typer> 
         </no-ssr>
         </strong>
-        aspirants @Warangal, Telangana.
+        aspirants @City, State.
     </p>
 </div>
 </section>

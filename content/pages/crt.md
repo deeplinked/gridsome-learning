@@ -6,7 +6,7 @@ date: new batch starts on 1st of every month
 duration: 1 month
 fee: 5,250
 discounted: Free
-venue: Warangal/Hanamkonda
+venue: City name
 ---
 
 Various stages of the selection process remain, broadly, the same for these companies, with some slight variations. These variations could be in the form of an additional or less number of stages for some companies.

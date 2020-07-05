@@ -3,13 +3,7 @@
   <div class="container">
 <div class="navbar-brand">
     <g-link class="navbar-item" to="/">
-      <g-image 
-      src="~/assets/logo.png" 
-      height="60" 
-      width="181" 
-      fit="inside" 
-      blur=0
-      quality=100 />
+      Company Logo
     </g-link>
     <a 
     role="button" 
