@@ -5,11 +5,9 @@ import DefaultLayout from '~/layouts/Default.vue'
 import '~/assets/bulma.min.css'
 import '@fortawesome/fontawesome-free/css/all.css'
 import '@fortawesome/fontawesome-free/js/all.js'
-import VueTyperPlugin from 'vue-typer'
 
 export default function (Vue, { router, head, isClient }) {
 
-  Vue.use(VueTyperPlugin)
   // Set default layout as a global component
   Vue.component('Layout', DefaultLayout)
   // google fonts jost

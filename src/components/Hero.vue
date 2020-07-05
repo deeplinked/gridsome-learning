@@ -11,11 +11,13 @@
     <p class="subtitle is-4">
         Quality and affordable coaching for 
         <strong>
+        <no-ssr>
         <vue-typer 
             :pre-type-delay='100'
             :pre-erase-delay='3000'
             :text='["GATE","PSU","CII-iPATE"]'>
         </vue-typer> 
+        </no-ssr>
         </strong>
         aspirants @Warangal, Telangana.
     </p>
@@ -24,7 +26,9 @@
 </template>
 
 <script>
-import { VueTyper } from 'vue-typer';
+if (process.browser) {
+  var VueTyper = require('vue-typer').VueTyper
+}
 export default {
     components: {
         VueTyper
