@@ -2,7 +2,7 @@
 title: PSUs (Public Sector Undertakings)
 branch: EEE
 timings: 4-6 hours/day
-date: 25 August 2020
+date: 25 August
 duration: 5 months
 fee: 22,650
 discounted: 18,250

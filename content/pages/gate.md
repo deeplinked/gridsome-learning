@@ -2,7 +2,7 @@
 title: GATE 2021
 branch: EEE and ECE
 timings: 18:00 to 21:00
-date: 25 August 2020
+date: 25 August
 duration: 5 months
 fee: 18,250
 discounted: 15,250
