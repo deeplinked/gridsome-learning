@@ -12,7 +12,7 @@
 :typeSpeed="100"
 :startDelay="100"
 :backSpeed="50"
-:backDelay="2000"
+:backDelay="2500"
 :loop="true" 
 @onComplete="doSmth()"
 >
