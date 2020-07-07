@@ -6,8 +6,17 @@
     <h1 class="title is-1 has-text-link">Company Name</h1>
     <div class="is-divider" data-content="company tag line"></div>
 
-<vue-typed-js :strings="['awesome', 'brilliant']" :loop="true" @onComplete="doSmth()">
-  <p class="subtitle has-text-centered">We are a <span class="typing"></span> company!</p>
+<vue-typed-js 
+:strings="['<strong>GATE</strong>', '<strong>PSU</strong>', '<strong>iPATE</strong>']" 
+:contentType="'html'"
+:typeSpeed="100"
+:startDelay="100"
+:backSpeed="50"
+:backDelay="2000"
+:loop="true" 
+@onComplete="doSmth()"
+>
+<p class="subtitle is-4">Quality and affordable coaching for <span class="typing"></span> aspitants @City, State</p>
 </vue-typed-js>
 
 </div>
