@@ -1,37 +1,28 @@
 <template>
 <section class="hero is-medium has-text-centered">
 <div class="hero-body">
+<div class="container">
     
-    <div class="columns ">
-    <div class="column is-offset-3 is-6">
     <h1 class="title is-1 has-text-link">Company Name</h1>
     <div class="is-divider" data-content="company tag line"></div>
-    </div>
-    </div>
-    <p class="subtitle is-4">
-        Quality and affordable coaching for 
-        <strong>
-        <no-ssr>
-        <vue-typer 
-            :pre-type-delay='100'
-            :pre-erase-delay='3000'
-            :text='["GATE","PSU","CII-iPATE"]'>
-        </vue-typer> 
-        </no-ssr>
-        </strong>
-        aspirants @City, State.
-    </p>
+
+<vue-typed-js :strings="['awesome', 'brilliant']" :loop="true" @onComplete="doSmth()">
+  <p class="subtitle has-text-centered">We are a <span class="typing"></span> company!</p>
+</vue-typed-js>
+
+</div>
 </div>
 </section>
 </template>
 
 <script>
-if (process.browser) {
+/*if (process.browser) {
   var VueTyper = require('vue-typer').VueTyper
-}
+}*/
+import { VueTypedJs } from 'vue-typed-js'
 export default {
     components: {
-        VueTyper
+        VueTypedJs
     }
 }
 </script>
@@ -52,5 +43,8 @@ strong {
 }
 .title.is-1 {
     font-size: 3.25rem;
+}
+.typed-element {
+    justify-content: center;
 }
 </style>
